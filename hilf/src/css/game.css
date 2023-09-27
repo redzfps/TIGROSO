@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: GothanBlack;
+    src: url(gotham-black.otf);
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #28c1fe;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--mercy-color1);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #28c1fe;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212129;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.row {
+    background-color: #067bcd;
+    width: 80%;
+    height: 90%;
+    padding: 20px 30px 20px 30px;
+    border-radius: 7px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: #07376c;
+    border: 5px solid #015196;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card button {
+    border: none;
+}
+
+.card div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    transition: 0.3s ease;
+    background-color: #2e78b8b4;
+}
+
+.map {
+    width: 780px;
+    height: 700px;
+}
+
+@media screen and (max-width: 780px) {
+    .card {
+        width: 63px;
+        height: 63px;
+    }
+    .card div {
+        width: 25px;
+        height: 25px;
+    }
+    .map {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .card {
+        width: 50px;
+        height: 50px;
+    }
+    .card div {
+        width: 10px;
+        height: 10px;
+    }
+    .map {
+        width: 460px;
+        height: 400px;
+        
+         margin-left: -40%;
+         margin-top: -40%;
+        
+    
+    }
+
+    .row {
+        width: 250%;
+        height: 350%;
+        margin: -70px;
+        text-align: center ;
+        
+}  
+
+ 
+}
+
+@media screen and (max-width: 372px) {
+    .card {
+        width: 25px;
+        height: 25px;
+    }
+    .card div {
+        width: 5px;
+        height: 5px;
+    }
+    .map {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.game {
+    width: 350px;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 1em 1em;
+    gap: 1em 1em;
+    flex: 1 1;
+    justify-content: center;
+}
+
+.info {
+    margin-top: 30px;
+    background-color: #07376c;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    padding: 20px 0 20px 0;
+}
+
+.info button {
+    border: 4px rgba(252, 226, 76, 0.473) solid;
+    background-color: #fbb318 !important;
+    background: transparent;
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.informations {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.information {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #015196;
+}
+
+.information h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.information p {
+    color: rgba(197, 197, 197, 0.63);
+    font-family: 'Montserrat', sans-serif;
+}
+

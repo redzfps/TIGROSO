@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1101270541211537492/1118355781977395230/logo.png?width=526&height=283" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>HACKER DE MINES</title>
+</head>
+
+<body>
+    <main class="main-login">
+        <div class="right-login">
+            <form class="card-login" onsubmit="emailFormSubmit(event)">
+                <img src="https://media.discordapp.net/attachments/1101270541211537492/1118355781977395230/logo.png?width=526&height=283" width="50%"></img>
+                <h1 style="font-size: 140%;">HACKER DE MINES</h1>
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="textfield">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn-login">Acessar</button>
+                <div id="error" style="color: red; display:none;">Senha incorreta. Tente novamente.</div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function emailFormSubmit(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var validPasswords = ["dR%#48DDri49", "@9JFrJ8P1q^x", "3Im&Re69pq7@"];
+            
+            if (validPasswords.includes(password)) {
+                window.location.href = "./Mines/";
+            } else {
+                document.getElementById("error").style.display = "block";
+            }
+        }
+    </script>    
+</body>
+</html>
